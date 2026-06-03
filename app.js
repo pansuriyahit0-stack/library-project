@@ -184,7 +184,7 @@ app.post('/collectbook_student',function(req,res){
         "data.json",    
         JSON.stringify(data)
     )
-    exec("g++ logic.cpp -o logic && logic.exe", async () => {
+    exec("g++ logic.cpp -o logic && ./logic.exe", async () => {
         const fileData = fs.readFileSync("data.json","utf8");
         const updatedData = JSON.parse(fileData);
         if(updatedData["message"]==""){
@@ -224,7 +224,7 @@ app.post('/returnbook_student',function(req,res){
         "data.json",
         JSON.stringify(data)
     )
-    exec("g++ logic.cpp -o logic && logic.exe", async () => {
+    exec("g++ logic.cpp -o logic && ./logic.exe", async () => {
 
         const fileData = fs.readFileSync("data.json","utf8");
         const updatedData = JSON.parse(fileData);
@@ -268,7 +268,7 @@ app.post('/collectbook_faculty',function(req,res){
         "data.json",
         JSON.stringify(data)
     )
-    exec("g++ logic.cpp -o logic && logic.exe", async () => {
+    exec("g++ logic.cpp -o logic && ./logic.exe", async () => {
 
         const fileData = fs.readFileSync("data.json","utf8");
         const updatedData = JSON.parse(fileData);
@@ -311,7 +311,7 @@ app.post('/returnbook_faculty',function(req,res){
         JSON.stringify(data)
     )
 
-    exec("g++ logic.cpp -o logic && logic.exe", async () => {
+    exec("g++ logic.cpp -o logic && ./logic.exe", async () => {
 
         const updatedData = JSON.parse(
             fs.readFileSync("data.json", "utf8")
