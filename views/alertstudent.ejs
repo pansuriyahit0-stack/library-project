@@ -22,13 +22,13 @@
         
         <div class="card-box">
             <center><h1>Book issue or return for student</h1></center><br>
-            <form action="/collectbook_student">
+            <form action="/collectbook_student" method="post">
                 <input type="hidden" name="role" value="student">
                 <!-- <label class="fild" for="name">Enter book name</label> -->
                 <input class="fild" type="text" name="name" placeholder="Enter the name of new"><br>
                 <input class="sub" type="submit" name="add" value="add">
             </form><br><br>
-            <form action="/returnbook_student">
+            <form action="/returnbook_student" method="post">
                 <input type="hidden" name="role" value="student">
                 <!-- <label class="fild" for="name">Enter book name</label> -->
                 <input class="fild" type="text" name="name" placeholder="Enter the name of retuned book"><br>
