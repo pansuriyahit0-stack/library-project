@@ -334,4 +334,8 @@ app.post('/returnbook_faculty',function(req,res){
 
 });
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function () {
+    console.log("Server running");
+});
