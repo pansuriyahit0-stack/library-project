@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- <center><h1>Login for faculty</h1></center><br> -->
+    <div class="main">
+
+    <div>
+        <%- include("nav/navbar") %>
+    </div>
+
+    <div class="content">
+        <div>
+        <!-- <h1 style="margin-left: -70px;">Smart Library Management System</h1> -->
+        <div class="card-box">
+
+            <h1>Login for faculty</h1>
+
+            <form action="/loginfaculty" method="post">
+
+                <input type="hidden" name="role" value="student">
+                <input class="fild"
+                       type="email"
+                       name="email"
+                       placeholder="Enter email">
+
+                <input class="fild"
+                       type="password"
+                       name="password"
+                       placeholder="Enter password">
+
+                <input class="sub"
+                       type="submit"
+                       value="Login">
+
+            </form>
+
+        </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="main">
+
+    <div>
+        <%- include("nav/navbar") %>
+    </div>
+
+    <div class="content">
+
+        <div class="card-box">
+
+            <h1>Add new student</h1>
+
+            <form action="/addstudent" method="post">
+
+                <input type="hidden" name="role" value="student">
+
+                <input class="fild"
+                       type="text"
+                       name="name"
+                       placeholder="Enter name">
+
+                <input class="fild"
+                       type="email"
+                       name="email"
+                       placeholder="Enter email">
+
+                <input class="fild"
+                       type="password"
+                       name="password"
+                       placeholder="Enter password">
+
+                <input class="sub"
+                       type="submit"
+                       value="Add">
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>  -->

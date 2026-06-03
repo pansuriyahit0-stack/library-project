@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        /* .card{
+            background-color: rgb(136, 134, 131);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fild{
+            width: 90%;
+            padding: 10px;
+            height: 25px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .sub{
+            width: 80%;
+            height: 35px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 20px;
+            padding: 6px;
+        } */
+        img{
+            width: 120px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Smart Library Management System</h1>
+    <div class="card">
+        <div>
+            <br>
+            <center><img src="/image/download.jpg" alt="Image not found"></center>
+            <center><h1>Register for college</h1></center><br>
+            <form action="/register" method="post">
+                <center><input class="fild" type="text" name="name" placeholder="College name as a username" required><br></center>
+                <center><input class="fild" type="password" name="password" id="" placeholder="Create a strong password" required><br></center>
+                <input class="sub" type="submit" name="submit" value="Register">
+            </form><br>
+            <center>OR</center><br>
+            <center>Already have an account? <a style="color: blue;" href="/login">Login here</a></center><br>
+        </div>
+    </div>
+    </center>
+    <!-- </div> -->
+</body>
+</html>

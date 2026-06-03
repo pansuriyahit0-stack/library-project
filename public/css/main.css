@@ -1,0 +1,184 @@
+body{
+    margin:0;
+    padding:0;
+
+    background-color: rgb(80, 69, 145);
+    color:white;
+
+    font-family: Arial;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+    url("/image/wal.jpg");
+
+    background-size:cover;
+
+}
+
+/* MAIN LAYOUT */
+
+.main{
+    display:flex;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+
+#menu{
+    display: none;
+    width:200px;
+
+    padding:10px;
+
+    background-color: rgb(164, 171, 202);
+
+    border-radius:10px;
+}
+
+#menu a{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background-color: rgb(123, 123, 197);
+
+    color:white;
+}
+
+/* CONTENT */
+
+.content{
+
+    flex:1;
+
+    display:flex;
+    padding-left: 100px;
+    justify-content:center;
+    /* border: solid; */
+    /* align-items:center; */
+}
+/* CARD */
+
+.card-box{
+
+    background-color: rgb(136, 134, 131);
+
+    padding:30px;
+
+    border-radius:15px;
+
+    width:350px;
+
+    text-align:center;
+}
+
+/* INPUTS */
+
+.fild{
+
+    width:90%;
+
+    height:40px;
+
+    margin-top:15px;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:10px;
+}
+
+/* BUTTON */
+
+.sub{
+
+    width:90%;
+
+    height:45px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background-color: rgb(83, 64, 102);
+}
+
+
+@media (max-width:768px){
+
+    /* main layout becomes vertical */
+
+    .main{
+        flex-direction:column;
+    }
+
+    /* navbar full width */
+
+    #menu{
+        width:auto;
+
+        margin:10px;
+    }
+
+    /* navbar links */
+
+    #menu a{
+        margin-bottom:10px;
+    }
+
+    /* content center */
+
+    .content{
+
+        padding:20px;
+
+        justify-content:center;
+
+        align-items:center;
+    }
+
+    /* card responsive */
+
+    .card-box{
+
+        width:90%;
+
+        max-width:350px;
+
+        padding:20px;
+    }
+
+    /* inputs responsive */
+
+    .fild{
+
+        width:90%;
+    }
+
+    /* button responsive */
+
+    .sub{
+
+        width:95%;
+    }
+    .hadding{
+        margin: 0px;
+    }
+}

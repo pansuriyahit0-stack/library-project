@@ -1,0 +1,14 @@
+{
+    "bookname": "docn",
+    "message": "",
+    "operation": "remove",
+    "person": {
+        "__v": 0,
+        "_id": "6a1ece749b5ce3fb9843abb7",
+        "books": "",
+        "email": "mit@gmail.com",
+        "password": "$2b$10$JXmgue0Tc5xpRKeGoyEmIeI334KTe.L5fcv33eI9Lf/Lq038Mp6eW",
+        "role": "faculty"
+    },
+    "role": "faculty"
+}

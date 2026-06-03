@@ -1,0 +1,34 @@
+
+<button onclick="showMenu()">
+    ☰
+</button>
+<div>
+    <div>
+        <h1 class="hadding">Smart Library Management System</h1>
+    </div>
+    <div id="menu">
+        <a style="margin-top: 0;" href="/home">Home</a><br>
+        <a style="margin-top: 0;" href="/addstudent">Add student</a><br>
+        <a style="margin-top: 0;" href="/addfaculty">Add faculty</a><br>
+        <a style="margin-top: 0;" href="/loginfaculty">Login faculty</a><br>
+        <a style="margin-top: 0;" href="/loginstudent">Login student</a>
+    </div>
+    
+</div>
+
+<script>
+
+function showMenu(){
+
+    const menu=document.getElementById("menu");
+
+    if(menu.style.display === "none"){
+            menu.style.display = "block";
+        }
+    else{
+        menu.style.display = "none";
+    }
+
+}
+
+</script>

@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- <center><h1>Login for faculty</h1></center><br> -->
+    <div class="main">
+
+    <div>
+        <%- include("nav/navbar") %>
+    </div>
+
+    <div class="content">
+        <div>
+        <!-- <h1 style="margin-left: -70px;">Smart Library Management System</h1>         -->
+        <div class="card-box">
+            <center><h1>Book issue or return for faculty</h1></center><br>
+            <form action="/collectbook_faculty">
+                <input type="hidden" name="role" value="student">
+                <!-- <label class="fild" for="name">Enter book name</label> -->
+                <input class="fild" type="text" name="name" placeholder="Enter the name of new"><br>
+                <input class="sub" type="submit" name="add" value="add">
+            </form><br><br>
+            <form action="/returnbook_faculty">
+                <input type="hidden" name="role" value="student">
+                <!-- <label class="fild" for="name">Enter book name</label> -->
+                <input class="fild" type="text" name="name" placeholder="Enter the name of retuned book"><br>
+                <input class="sub" type="submit" name="add" value="return">
+            </form>
+        </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
