@@ -18,6 +18,18 @@ body{
 
 }
 
+.but{
+    background-color: rgb(194, 165, 207);
+    border-radius: 5px;
+    margin: 6px; 
+    width: 35px;
+    /* margin-left: 88%;  */
+}
+
+.but:hover{
+    /* background-color: rgb(94, 124, 129); */
+    cursor: pointer;
+}
 /* MAIN LAYOUT */
 
 .main{
@@ -42,7 +54,9 @@ body{
 
     display:block;
 
-    margin-bottom:15px;
+    margin-bottom:10px;
+
+    /* line-height:1; */
 
     padding:15px;
 
@@ -132,9 +146,10 @@ body{
     /* navbar full width */
 
     #menu{
-        width:auto;
+        width:200px;
 
         margin:10px;
+        margin-left: 150px;
     }
 
     /* navbar links */
@@ -180,5 +195,12 @@ body{
     }
     .hadding{
         margin: 0px;
+    }
+    .but{
+        background-color: rgb(94, 124, 129);
+        border-radius: 5px;
+        margin: 6px; 
+        width: 35px;
+        margin-left: 88%; 
     }
 }

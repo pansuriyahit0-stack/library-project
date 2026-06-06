@@ -1,5 +1,5 @@
 
-<button onclick="showMenu()">
+<button class="but" onclick="showMenu()">
     ☰
 </button>
 <div>
@@ -7,12 +7,12 @@
         <h1 class="hadding">Smart Library Management System</h1>
     </div>
     <div id="menu">
-        <a style="margin-top: 0;" href="/home">Home</a><br>
-        <a style="margin-top: 0;" href="/addstudent">Add student</a><br>
-        <a style="margin-top: 0;" href="/addfaculty">Add faculty</a><br>
-        <a style="margin-top: 0;" href="/loginfaculty">Login faculty</a><br>
-        <a style="margin-top: 0;" href="/loginstudent">Login student</a>
-        <a style="margin-top: 0;" href="/logout">Logout</a>
+        <a href="/home">Home</a>
+        <a href="/addstudent">Add student</a>
+        <a href="/addfaculty">Add faculty</a>
+        <a href="/loginfaculty">Login faculty</a>
+        <a href="/loginstudent">Login student</a>
+        <a href="/logout">Logout</a>
     </div>
     
 </div>
@@ -20,7 +20,7 @@
 <script>
 
 function showMenu(){
-
+    // sess
     const menu=document.getElementById("menu");
 
     if(menu.style.display === "none"){

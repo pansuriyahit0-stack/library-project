@@ -16,14 +16,15 @@
 
     <div class="content">
         <div>
+        
         <!-- <h1 style="margin-left: -70px;">Smart Library Management System</h1> -->
         <div class="card-box">
-
+            
             <h1>Login for faculty</h1>
-
+            <%=message%>
             <form action="/loginfaculty" method="post">
 
-                <input type="hidden" name="role" value="student">
+                <input type="hidden" name="role" value="faculty">
                 <input class="fild"
                        type="email"
                        name="email"

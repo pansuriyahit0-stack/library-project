@@ -1,11 +1,11 @@
 {
-    "bookname": "My_book",
+    "bookname": "Cpp",
     "message": "",
     "operation": "add",
     "person": {
         "__v": 0,
         "_id": "6a1f187c537699cf6c195475",
-        "books": "My_book ",
+        "books": "Ddc Hw_1 Cpp ",
         "email": "hit@gmail.com",
         "name": "hit",
         "password": "$2b$10$ikbB9.wiDNn0h/rk4o2iS.uFRT0eaLb5Q7fIiAp5gPZ9KtTxFqG2m",

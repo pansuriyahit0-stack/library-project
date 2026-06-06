@@ -20,6 +20,9 @@
             <br>
             <center><img src="/image/download.jpg" alt="Image not found"></center>
             <center><h1>Login for college</h1></center><br>
+            <% if(message){ %>
+                <%= message %>
+            <% } %>
             <form action="/login" method="post">
                 <!-- <label for="email">Collage name</label> -->
                 <input class="fild" type="text" name="name" placeholder="Username" required><br>
@@ -28,6 +31,7 @@
                 <center><input class="sub" type="submit" name="submit" value="Login"></center>
 
             </form><br>
+
             <center>OR</center><br>
             <center>Don't have an account? <a style="color: blue;" href="/register">Sign up here</a></center><br>
         </div>

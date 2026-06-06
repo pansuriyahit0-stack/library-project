@@ -6,7 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/main.css">
     <style>
-        
+        .users{
+            background-color: rgb(113, 94, 131);
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            padding:10px;
+        }
+        .one{
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            border: solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .name{
+            width: 80px;
+        }
+
+        .role{
+            width: 80px;
+            text-align: center;
+        }
+
+        .data{
+            width: 80px;
+            /* text-align: right; */
+            border-radius: 8px;
+            /* height: 30px; */
+            
+        }
+        .data:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -15,7 +49,24 @@
             <%- include("nav/navbar") %>
         </div>
         <div class="content">
-                
+            <div class="users">
+                <div class="one" style="border: none;">
+                    <div class="name">Username</div>
+                    <div class="role">Role</div>
+                    <div class="data">Data</div>
+                </div>
+                <% users.forEach(function(user){ %>
+                    <div class="one">
+                        <div class="name"><%=user.name%></div>
+                        <div class="role"><%=user.role%></div>
+                        <form action="/showdata" method="post">
+                            <!-- <div class="date">Due Date</div> -->
+                            <input type="hidden" name="user" value='<%-JSON.stringify(user)%>'>
+                            <input style="height: 30px; background-color: rgb(156, 126, 156);" class="data" type="submit" name="submit" value="View">
+                        </form>
+                    </div>
+                <%})%>
+            </div>
         </div>
     </div>
 </body>
