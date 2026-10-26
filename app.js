@@ -287,27 +287,6 @@ app.post('/collectbook_student',function(req,res){
     cpp.stderr.on("data",function(data){
         console.error("CPP Error:",data.toString());
     });
-    /*exec("g++ logic.cpp -o logic && logic.exe", async () => {
-        const fileData = fs.readFileSync("data.json","utf8");
-        const updatedData = JSON.parse(fileData);
-        if(updatedData["message"]==""){
-            let newbooks=updatedData["person"]["books"];
-            let id=req.session.person._id;
-            await userModel.updateOne(
-                {_id:req.session.person._id},{books:newbooks}
-            );
-            let newuser=await userModel.findOne({_id:id});
-            // req.session.destroy();
-            req.session.person=newuser;
-        }
-        else{
-            let message=updatedData.message||"";
-            return res.render('alertstudent',{message:message});
-        }
-        console.log(updatedData);
-        res.render('alertstudent',{message:"Book added successfully"});
-
-    });*/
 })
 
 app.post('/returnbook_student',function(req,res){
@@ -472,6 +451,21 @@ app.post('/returnbook_faculty',function(req,res){
 
 // const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-    console.log(`Server is live and listening on port ${port}`);
-});
+async function startServer() {
+    try {
+        await mongoose.connect(
+            "mongodb://127.0.0.1:27017/mainDB"
+        );
+
+        console.log("Connected to local MongoDB");
+
+        app.listen(port, () => {
+            console.log(`Server is live and listening on port ${port}`);
+        });
+    } catch (err) {
+        console.error("MongoDB connection failed:", err);
+        process.exit(1);
+    }
+}
+
+startServer();
